@@ -1,0 +1,301 @@
+html{
+	background: #222;
+    overflow-x: hidden;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+						/* LE CIEL :D ; */
+
+div{
+	width: auto;
+	height:auto;
+	overflow-x: hidden;
+	position: relative;
+}
+
+div~div{
+	margin-top: -6px;
+	max-width: 100%;
+	height:auto;
+	overflow-x: hidden;
+	position: relative;
+}
+
+		/* LE NUAGE NORMAL */
+
+.nuage1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: nuage1 20s linear infinite;
+}
+
+@-webkit-keyframes nuage1 {
+	from { left:-5%; }
+	to { left: 110%; }
+}
+
+		/* COURS FOREST C PA VRÉ! */
+
+.nuage2{
+	position: absolute;
+	top: 0;
+	-webkit-animation: nuage2 60s linear infinite;
+}
+
+@-webkit-keyframes nuage2 {
+	from { top:10%; left:-5%; }
+	to { top:10%; left: 110%; }
+}
+
+		/* JE KIFF BOUGER MOI */
+
+.nuage3 {
+	position: absolute;
+	top: 0;
+	-webkit-animation: nuage3 10s linear infinite;
+}
+
+@-webkit-keyframes nuage3 {
+	0%  { top: 30px; left: -10%; }
+	10% { top: 50px; left: 10%;   }
+	20% { top: 30px; left: 20%;   }
+	30% { top: 50px; left: 30%;   }
+	40% { top: 30px; left: 40%;   }
+	50% { top: 50px; left: 50%;   }
+	60% { top: 30px; left: 60%;   }
+	70% { top: 50px; left: 70%;   }
+	80% { top: 30px; left: 80%;   }
+	90% { top: 50px; left: 90%;   }
+	100% { top: 30px; left: 100%; }
+}
+
+/* J'AI PAS LE TEMPS GROS */
+
+.nuage4{
+	position: absolute;
+	top: 0;
+	-webkit-animation: nuage4 20s linear infinite;
+}
+
+@-webkit-keyframes nuage4 {
+	from { top:6%; left:-20%; }
+	to { top:6%; left: 110%; }
+}
+
+						/* SOLEIL */
+.sun img{
+	width: 250px;
+	height: 250px;
+}
+.sun{
+	position: absolute;
+	top: -105px;
+    right: -40px;
+    -webkit-animation: rotating 5s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from { -webkit-transform: rotate(0deg);   }
+  to   { -webkit-transform: rotate(360deg); }
+}
+
+						/* AVION DE CHASSE */
+
+.aviondechasse img{
+	width: 200px;
+	height: 100px;
+}
+
+.aviondechasse{
+	position: absolute;
+	top: -20px;
+	right: -30%;
+	-webkit-animation: plane 1s  ease-in infinite;
+}
+
+@-webkit-keyframes plane {
+	from: { top: -200%; right: -20%;}
+	to { top 5%; right: 200%; }
+}
+
+							/* AVION A GAUCHE */
+
+.avion img{
+	width: 200px;
+	height: 100px;
+}
+
+.avion{
+	position: absolute;
+	top: -50px;
+	left: -30%;
+	-webkit-animation: avion 3s 5s linear infinite;
+}
+
+@-webkit-keyframes avion {
+	0%   { top: 60px; left: -30%;  }
+	25%  { top: 35px; left: 10%;   }
+	50%  { top: 15px; left: 20%;   }
+	75%  { top: 0px; left: 30%;   }
+	100% { top: -50px; left: 40%;   }
+}
+
+				/* AVION A DROITE */
+
+.avion2 img{
+	width: 150px;
+	height: 100px;
+}
+
+.avion2{
+	position: absolute;
+	top: -50px;
+	right: -30%;
+	-webkit-animation: avion2 3s 10s linear infinite;
+}
+
+@-webkit-keyframes avion2 {
+	0%   { top: 60px; right: -30%;  }
+	25%  { top: 35px; right: 10%;   }
+	50%  { top: 15px; right: 20%;   }
+	75%  { top: 0px;  right: 30%;   }
+	100% { top: -50px;right: 40%;   }
+}
+
+
+						/* LA ROUTE */
+
+
+/* PERSONNAGES */
+
+/* HELLO ONE */
+
+.hi {
+	position: absolute;
+	top: 95px;
+	left: 60%;
+    width: 50px;
+    height: 72px;
+    background-image: url("hi.png");
+	margin: 0 auto;
+    -webkit-animation: hello .8s steps(10, end) infinite;
+}
+
+@-webkit-keyframes hello {
+    from { background-position: 0px; }
+    to { background-position: -500px; }
+}
+
+/* WALKING KID */
+
+.walking {
+	position: absolute;
+	top: 12px;
+	left: 10%;
+    width: 110px;
+    height: 200px;
+    background-image: url("walking.png");
+	margin: 0 auto;
+    -webkit-animation: walking 10s linear infinite;
+}
+
+@-webkit-keyframes walking {
+	from { left:-10%; }
+	to { left: 110%; }
+}
+
+/* SKATEBOARD */
+
+.skateboard {
+	position: absolute;
+    top: 110px;
+    left: 10%;
+    width: 119px;
+    height: 90px;
+    background-image: url(skate.png);
+    margin: 0 auto;
+    -webkit-animation: walking 10s linear infinite;
+}
+
+@-webkit-keyframes walking {
+	from { left:-8%; }
+	to { left: 110%; }
+}
+
+
+/* CAR 1 LEFT */
+
+.car1{
+	position: absolute;
+	top: 135px;
+	left: 10%;
+	-webkit-animation: car1 5s linear infinite;
+}
+
+.car1 img{
+
+	width:200px;
+	height: 200px;
+}
+
+
+@-webkit-keyframes car1 {
+	from { left:-10%; }
+	to { left: 110%; }
+}
+
+/* CAR 2 LEFT */
+
+.car2{
+	position: absolute;
+	top: 135px;
+	left: 10%;
+	-webkit-animation: car2 4s linear forwards;
+}
+
+.car2 img{
+
+	width:200px;
+	height: 200px;
+}
+
+@-webkit-keyframes car2{
+	0%  { top: 135px; left: -150%; }
+	30% { top: 135px; left: 0%;   }
+	40% { top: 135px; left: 10%;   }
+	50% { top: 100px; left: 30%; }
+	75% { top: 50px; left: 65%;   }
+	100% { top: 135px; left: 100%;   }
+}
+
+/* CAR 1 RIGHT */
+
+.car3{
+	position: absolute;
+	top: 80px;
+	right: 10%;
+	-webkit-animation: car3 5s linear infinite;
+}
+
+.car3 img{
+
+	width:200px;
+	height: 200px;
+}
+
+
+@-webkit-keyframes car3 {
+	from { right: -1000%; }
+	to { right:  110%; }
+}
+	
+
+
+
+
+
