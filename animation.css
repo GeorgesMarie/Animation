@@ -1,0 +1,237 @@
+html{
+	background: #222;
+    overflow-x: hidden;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+						/* LE CIEL :D ; */
+
+div{
+	width: auto;
+	height:auto;
+	overflow-x: hidden;
+	position: relative;
+}
+
+div~div{
+	margin-top: -4px;
+	max-width: 100%;
+	height:auto;
+	overflow-x: hidden;
+	position: relative;
+}
+
+		/* LE NUAGE NORMAL */
+
+.nuage1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: nuage1 20s linear infinite;
+}
+
+@-webkit-keyframes nuage1 {
+	from { left:-5%; }
+	to { left: 110%; }
+}
+
+		/* COURS FOREST C PA VRÉ! */
+
+.nuage2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: nuage2 60s linear infinite;
+}
+
+@-webkit-keyframes nuage2 {
+	from { top:10%; left:-5%; }
+	to { top:10%; left: 110%; }
+}
+
+		/* JE KIFF BOUGER MOI */
+
+.nuage3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: nuage3 10s linear infinite;
+}
+
+@-webkit-keyframes nuage3 {
+	0%  { top: 30px; left: -10%; }
+	10% { top: 50px; left: 10%;   }
+	20% { top: 30px; left: 20%;   }
+	30% { top: 50px; left: 30%;   }
+	40% { top: 30px; left: 40%;   }
+	50% { top: 50px; left: 50%;   }
+	60% { top: 30px; left: 60%;   }
+	70% { top: 50px; left: 70%;   }
+	80% { top: 30px; left: 80%;   }
+	90% { top: 50px; left: 90%;   }
+	100% { top: 30px; left: 100%; }
+}
+
+/* J'AI PAS LE TEMPS GROS */
+
+.nuage4{
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: nuage4 20s linear infinite;
+}
+
+@-webkit-keyframes nuage4 {
+	from { top:6%; left:-20%; }
+	to { top:6%; left: 110%; }
+}
+
+						/* SOLEIL */
+
+.sun{
+	position: absolute;
+	top: -40px;
+	right: -60px;
+}
+
+.sun img
+{
+	-ms-animation: rotation 2s infinite;
+}
+
+@-webkit-keyframes rotation{
+	from { -ms-transform: rotate(0deg); }
+	to { -ms-transform: rotate(180deg); }
+}
+
+						/* LA ROUTE */
+
+
+/* PERSONNAGES */
+
+/* HELLO ONE */
+
+.hi {
+	position: absolute;
+	top: 95px;
+	left: 60%;
+    width: 50px;
+    height: 72px;
+    background-image: url("hi.png");
+	margin: 0 auto;
+    -webkit-animation: hello .8s steps(10, end) infinite;
+}
+
+@-webkit-keyframes hello {
+    from { background-position: 0px; }
+    to { background-position: -500px; }
+}
+
+/* WALKING KID */
+
+.walking {
+	position: absolute;
+	top: 30px;
+	left: 10%;
+    width: 110px;
+    height: 200px;
+    background-image: url("walking.png");
+	margin: 0 auto;
+    -webkit-animation: moving 2s steps(6, end) infinite;
+    -webkit-animation: walking 10s linear infinite;
+}
+
+@-webkit-keyframes moving {
+    from { background-position: 0px; }
+    to { background-position: 100px; }
+}
+
+@-webkit-keyframes walking {
+	from { left:-10%; }
+	to { left: 110%; }
+}
+
+/* WALKING PIXEL GUY 
+
+.pixelright {
+	position: absolute;
+	top:40px;
+	left: 50px;
+	width: 102px;
+	height: 148px;
+	margin-top: 40px;
+}
+
+.walk-right {
+	background-image: url(walkright.png);
+	-webkit-animation: walkright .9s steps(6) infinite;
+	-webkit-animation: nuage1 20s linear infinite;
+}
+
+.walk-left {
+	background-image: url(walkleft.png);
+	-webkit-animation: walkleft .9s steps(6) infinite;
+}
+
+@-webkit-keyframes walkright {
+	from { background-position: 0px; }
+	to { background-position: -612px; }
+}
+
+@-webkit-keyframes walkright {
+	from { left:-5%; }
+	to { left: 110%; }
+
+@-webkit-keyframes walkleft {
+	from { background-position: 0px; }
+	to { background-position: -612px; }
+} */
+
+
+/* CAR 1*/
+
+.car1{
+	position: absolute;
+	top: 135px;
+	left: 10%;
+	-webkit-animation: car1 10s linear infinite;
+}
+
+.car1 img{
+
+	width:200px;
+	height: 200px;
+}
+
+
+@-webkit-keyframes car1 {
+	from { left:-10%; }
+	to { left: 110%; }
+}
+
+/* CAR 2*/
+
+.car2{
+	position: absolute;
+	top: 190px;
+	left: 10%;
+	-webkit-animation: car2 10s linear infinite;
+}
+
+.car2 img{
+
+	width:200px;
+	height: 200px;
+}
+
+@-webkit-keyframes car2 {
+	from { left:-10%; }
+	to { left: 110%; }
+}
+
+
+
