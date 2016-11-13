@@ -31,9 +31,11 @@ div~div{
 	position: absolute;
 	top: 0;
 	left: 0;
-	-webkit-animation: nuage1 20s linear infinite;
+	-webkit-animation-name: nuage1;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
 }
-
 @-webkit-keyframes nuage1 {
 	from { left:-5%; }
 	to { left: 110%; }
@@ -45,9 +47,11 @@ div~div{
 	position: absolute;
 	top: 0;
 	left: 0;
-	-webkit-animation: nuage2 60s linear infinite;
+	-webkit-animation-name: nuage2;
+	-webkit-animation-duration: 60s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
 }
-
 @-webkit-keyframes nuage2 {
 	from { top:10%; left:-5%; }
 	to { top:10%; left: 110%; }
@@ -59,9 +63,11 @@ div~div{
 	position: absolute;
 	top: 0;
 	left: 0;
-	-webkit-animation: nuage3 10s linear infinite;
+	-webkit-animation-name: nuage3;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
 }
-
 @-webkit-keyframes nuage3 {
 	0%  { top: 30px; left: -10%; }
 	10% { top: 50px; left: 10%;   }
@@ -82,9 +88,11 @@ div~div{
 	position: absolute;
 	top: 0;
 	left: 0;
-	-webkit-animation: nuage4 20s linear infinite;
+	-webkit-animation-name: nuage4;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
 }
-
 @-webkit-keyframes nuage4 {
 	from { top:6%; left:-20%; }
 	to { top:6%; left: 110%; }
@@ -92,21 +100,47 @@ div~div{
 
 						/* SOLEIL */
 
+.sun img{
+	width: 200px;
+	height: 200px;
+}
 .sun{
 	position: absolute;
-	top: -40px;
-	right: -60px;
+	top: -100px;
+    right: -80px;
+    -webkit-animation-name: rotating;
+    -webkit-animation-duration: 35s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes rotating {
+  from { -webkit-transform: rotate(0deg);   }
+  to   { -webkit-transform: rotate(360deg); }
 }
 
-.sun img
-{
-	-ms-animation: rotation 2s infinite;
+.avion img{
+	width: 200px;
+	height: 100px;
 }
 
-@-webkit-keyframes rotation{
-	from { -ms-transform: rotate(0deg); }
-	to { -ms-transform: rotate(180deg); }
+.avion{
+	position: absolute;
+	top: -50px;
+	left: -30%;
+	-webkit-animation-name: avion;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-delay: 17s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 3;
 }
+@-webkit-keyframes avion {
+	0%   { top: 60px; left: -30%;  }
+	25%  { top: 35px; left: 10%;   }
+	50%  { top: 15px; left: 20%;   }
+	75%  { top: 0px; left: 30%;   }
+	100% { top: -80px; left: 40%;   }
+}
+
 
 						/* LA ROUTE */
 
@@ -123,9 +157,12 @@ div~div{
     height: 72px;
     background-image: url("hi.png");
 	margin: 0 auto;
-    -webkit-animation: hello .8s steps(10, end) infinite;
+    -webkit-animation-name: hello;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-delay: 5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: steps(10, end);
 }
-
 @-webkit-keyframes hello {
     from { background-position: 0px; }
     to { background-position: -500px; }
@@ -135,81 +172,61 @@ div~div{
 
 .walking {
 	position: absolute;
-	top: 30px;
+	top: 12px;
 	left: 10%;
     width: 110px;
     height: 200px;
     background-image: url("walking.png");
 	margin: 0 auto;
-    -webkit-animation: moving 2s steps(6, end) infinite;
-    -webkit-animation: walking 10s linear infinite;
-}
+    -webkit-animation-name: walking;
+    -webkit-animation-duration: 18s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
 
-@-webkit-keyframes moving {
-    from { background-position: 0px; }
-    to { background-position: 100px; }
 }
-
 @-webkit-keyframes walking {
 	from { left:-10%; }
 	to { left: 110%; }
 }
 
-/* WALKING PIXEL GUY 
+/* SKATEBOARD */
 
-.pixelright {
+.skateboard {
 	position: absolute;
-	top:40px;
-	left: 50px;
-	width: 102px;
-	height: 148px;
-	margin-top: 40px;
+    top: 110px;
+    left: 10%;
+    width: 119px;
+    height: 90px;
+    background-image: url(skate.png);
+    margin: 0 auto;
+    -webkit-animation-name: walking;
+    -webkit-animation-duration: 18s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
 }
 
-.walk-right {
-	background-image: url(walkright.png);
-	-webkit-animation: walkright .9s steps(6) infinite;
-	-webkit-animation: nuage1 20s linear infinite;
-}
-
-.walk-left {
-	background-image: url(walkleft.png);
-	-webkit-animation: walkleft .9s steps(6) infinite;
-}
-
-@-webkit-keyframes walkright {
-	from { background-position: 0px; }
-	to { background-position: -612px; }
-}
-
-@-webkit-keyframes walkright {
-	from { left:-5%; }
+@-webkit-keyframes walking {
+	from { left:-8%; }
 	to { left: 110%; }
-
-@-webkit-keyframes walkleft {
-	from { background-position: 0px; }
-	to { background-position: -612px; }
-} */
-
+}
 
 /* CAR 1*/
 
 .car1{
 	position: absolute;
-	top: 135px;
+	top: 190px;
 	left: 10%;
-	-webkit-animation: car1 10s linear infinite;
+	-webkit-animation-name: car1;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-iteration-count: infinite;
 }
-
 .car1 img{
-
-	width:200px;
-	height: 200px;
+	width: 115px;
+	height: 135px;
 }
-
-
 @-webkit-keyframes car1 {
-	from { left:-10%; }
+	from { left:-30%; }
 	to { left: 110%; }
 }
 
@@ -217,15 +234,18 @@ div~div{
 
 .car2{
 	position: absolute;
-	top: 190px;
-	left: 10%;
-	-webkit-animation: car2 10s linear infinite;
+	top: 195px;
+	left: -10%;
+	-webkit-animation-name: car2;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-delay: 10s;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-iteration-count: infinite;
 }
 
 .car2 img{
-
-	width:200px;
-	height: 200px;
+	width: 115px;
+	height: 135px;
 }
 
 @-webkit-keyframes car2 {
@@ -233,5 +253,83 @@ div~div{
 	to { left: 110%; }
 }
 
+/* CAR 3*/
 
+.car3{
+	position: absolute;
+	top: 130px;
+	right: 10%;
+	-webkit-animation-name: car3;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
 
+.car3 img{
+	width: 115px;
+	height: 135px;
+}
+
+@-webkit-keyframes car3 {
+	from { right:-10%; }
+	to { right: 110%; }
+}
+
+/* CAR 4*/
+
+.car4{
+	position: absolute;
+	top: 130px;
+	right: -10%;
+	-webkit-animation-name: car4;
+	-webkit-animation-delay: 15s;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.car4 img{
+	width: 115px;
+	height: 135px;
+}
+
+@-webkit-keyframes car4 {
+	from { right:-30%; }
+	to { right: 110%; }
+}
+/* Styling du souterrain*/
+
+#souterrain
+{
+	background-image: url(souterrain.png);
+	background-repeat: repeat-x;
+	height: 300px;
+	position: relative;
+}
+span img
+{
+	height: 50px;
+	position: relative;
+	float: right;
+	right: -10px;
+	margin-top: 110px;
+	-webkit-animation-name: taupe;
+	-webkit-animation-duration: 70s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes taupe 
+{
+	0%  { margin-top: 110px; right: -5%;   }
+	10% { margin-top: 90px; right: -3%;   }
+	20% { margin-top: 111px; right: 20%;   }
+	30% { margin-top: 107px; right: 30%;   }
+	40% { margin-top: 100px; right: 40%;   }
+	50% { margin-top: 100px; right: 50%;   }
+	60% { margin-top: 110px; right: 60%;   }
+	70% { margin-top: 110px; right: 70%;   }
+	80% { margin-top: 110px; right: 80%;   }
+	90% { margin-top: 110px; right: 90%;   }
+	100% { margin-top: 110px; right: 108%;   }
+}
