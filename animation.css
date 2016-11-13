@@ -12,7 +12,7 @@ body{
 
 div{
 	width: auto;
-	height:auto;
+	height: auto;
 	overflow-x: hidden;
 	position: relative;
 }
@@ -37,8 +37,8 @@ div~div{
 	-webkit-animation-iteration-count: infinite;
 }
 @-webkit-keyframes nuage1 {
-	from { left:-5%; }
-	to { left: 110%; }
+	from { left:-5%;   }
+	to   { left: 110%; }
 }
 
 		/* COURS FOREST C PA VRÉ! */
@@ -53,8 +53,8 @@ div~div{
 	-webkit-animation-iteration-count: infinite;
 }
 @-webkit-keyframes nuage2 {
-	from { top:10%; left:-5%; }
-	to { top:10%; left: 110%; }
+	from { top:10%; left:-5%;   }
+	to   { top:10%; left: 110%; }
 }
 
 		/* JE KIFF BOUGER MOI */
@@ -69,17 +69,17 @@ div~div{
 	-webkit-animation-iteration-count: infinite;
 }
 @-webkit-keyframes nuage3 {
-	0%  { top: 30px; left: -10%; }
-	10% { top: 50px; left: 10%;   }
-	20% { top: 30px; left: 20%;   }
-	30% { top: 50px; left: 30%;   }
-	40% { top: 30px; left: 40%;   }
-	50% { top: 50px; left: 50%;   }
-	60% { top: 30px; left: 60%;   }
-	70% { top: 50px; left: 70%;   }
-	80% { top: 30px; left: 80%;   }
-	90% { top: 50px; left: 90%;   }
-	100% { top: 30px; left: 100%; }
+	  0%  { top: 30px; left: -10%;  }
+	 10%  { top: 50px; left:  10%;  }
+	 20%  { top: 30px; left:  20%;  }
+	 30%  { top: 50px; left:  30%;  }
+	 40%  { top: 30px; left:  40%;  }
+	 50%  { top: 50px; left:  50%;  }
+	 60%  { top: 30px; left:  60%;  }
+	 70%  { top: 50px; left:  70%;  }
+	 80%  { top: 30px; left:  80%;  }
+	 90%  { top: 50px; left:  90%;  }
+	100%  { top: 30px; left: 100%;  }
 }
 
 /* J'AI PAS LE TEMPS GROS */
@@ -94,8 +94,8 @@ div~div{
 	-webkit-animation-iteration-count: infinite;
 }
 @-webkit-keyframes nuage4 {
-	from { top:6%; left:-20%; }
-	to { top:6%; left: 110%; }
+	from { top:6%; left:-20%;  }
+	to   { top:6%; left: 110%; }
 }
 
 						/* SOLEIL */
@@ -109,7 +109,7 @@ div~div{
 	top: -100px;
     right: -80px;
     -webkit-animation-name: rotating;
-    -webkit-animation-duration: 35s;
+    -webkit-animation-duration: 30s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 }
@@ -134,11 +134,11 @@ div~div{
 	-webkit-animation-iteration-count: 3;
 }
 @-webkit-keyframes avion {
-	0%   { top: 60px; left: -30%;  }
-	25%  { top: 35px; left: 10%;   }
-	50%  { top: 15px; left: 20%;   }
-	75%  { top: 0px; left: 30%;   }
-	100% { top: -80px; left: 40%;   }
+	0%   { top:  60px; left: -30%;  }
+	25%  { top:  35px; left:  10%;  }
+	50%  { top:  15px; left:  20%;  }
+	75%  { top:   0px; left:  30%;  }
+	100% { top: -80px; left:  40%;  }
 }
 
 
@@ -156,7 +156,6 @@ div~div{
     width: 50px;
     height: 72px;
     background-image: url("hi.png");
-	margin: 0 auto;
     -webkit-animation-name: hello;
     -webkit-animation-duration: .8s;
     -webkit-animation-delay: 5s;
@@ -164,8 +163,8 @@ div~div{
 	-webkit-animation-timing-function: steps(10, end);
 }
 @-webkit-keyframes hello {
-    from { background-position: 0px; }
-    to { background-position: -500px; }
+    from { background-position: 0px;    }
+    to   { background-position: -500px; }
 }
 
 /* WALKING KID */
@@ -185,8 +184,8 @@ div~div{
 
 }
 @-webkit-keyframes walking {
-	from { left:-10%; }
-	to { left: 110%; }
+	from { left:-10%;  }
+	to   { left: 110%; }
 }
 
 /* SKATEBOARD */
@@ -206,8 +205,8 @@ div~div{
 }
 
 @-webkit-keyframes walking {
-	from { left:-8%; }
-	to { left: 110%; }
+	from { left:-8%;   }
+	to   { left: 110%; }
 }
 
 /* CAR 1*/
@@ -226,8 +225,8 @@ div~div{
 	height: 135px;
 }
 @-webkit-keyframes car1 {
-	from { left:-30%; }
-	to { left: 110%; }
+	from { left:-30%;  }
+	to   { left: 110%; }
 }
 
 /* CAR 2*/
@@ -249,8 +248,8 @@ div~div{
 }
 
 @-webkit-keyframes car2 {
-	from { left:-10%; }
-	to { left: 110%; }
+	from { left:-10%;  }
+	to   { left: 110%; }
 }
 
 /* CAR 3*/
@@ -272,7 +271,7 @@ div~div{
 
 @-webkit-keyframes car3 {
 	from { right:-10%; }
-	to { right: 110%; }
+	to 	 { right: 110%;  }
 }
 
 /* CAR 4*/
@@ -295,8 +294,9 @@ div~div{
 
 @-webkit-keyframes car4 {
 	from { right:-30%; }
-	to { right: 110%; }
+	to   { right: 110%;  }
 }
+
 /* Styling du souterrain*/
 
 #souterrain
@@ -322,7 +322,7 @@ span img
 @-webkit-keyframes taupe 
 {
 	0%  { margin-top: 110px; right: -5%;   }
-	10% { margin-top: 90px; right: -3%;   }
+	10% { margin-top: 90px; right: -3%;    }
 	20% { margin-top: 111px; right: 20%;   }
 	30% { margin-top: 107px; right: 30%;   }
 	40% { margin-top: 100px; right: 40%;   }
@@ -331,5 +331,5 @@ span img
 	70% { margin-top: 110px; right: 70%;   }
 	80% { margin-top: 110px; right: 80%;   }
 	90% { margin-top: 110px; right: 90%;   }
-	100% { margin-top: 110px; right: 108%;   }
+	100%{ margin-top: 110px; right: 108%;  }
 }
