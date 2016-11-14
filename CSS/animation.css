@@ -155,7 +155,7 @@ div~div{
 	left: 60%;
     width: 50px;
     height: 72px;
-    background-image: url("hi.png");
+    background-image: url("../Images/hi.png");
     -webkit-animation-name: hello;
     -webkit-animation-duration: .8s;
     -webkit-animation-delay: 5s;
@@ -175,7 +175,7 @@ div~div{
 	left: 10%;
     width: 110px;
     height: 200px;
-    background-image: url("walking.png");
+    background-image: url("../Images/walking.png");
 	margin: 0 auto;
     -webkit-animation-name: walking;
     -webkit-animation-duration: 18s;
@@ -196,7 +196,7 @@ div~div{
     left: 10%;
     width: 119px;
     height: 90px;
-    background-image: url(skate.png);
+    background-image: url(../Images/skate.png);
     margin: 0 auto;
     -webkit-animation-name: walking;
     -webkit-animation-duration: 18s;
@@ -301,7 +301,7 @@ div~div{
 
 #souterrain
 {
-	background-image: url(souterrain.png);
+	background-image: url(../Images/souterrain.png);
 	background-repeat: repeat-x;
 	height: 300px;
 	position: relative;
