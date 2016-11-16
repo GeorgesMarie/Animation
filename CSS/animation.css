@@ -8,7 +8,7 @@ body{
 	margin: 0;
 }
 
-						/* LE CIEL :D ; */
+						/* SKY */
 
 div{
 	width: auto;
@@ -25,7 +25,7 @@ div~div{
 	position: relative;
 }
 
-		/* LE NUAGE NORMAL */
+		/* NORMAL CLOUD */
 
 .nuage1{
 	position: absolute;
@@ -41,7 +41,7 @@ div~div{
 	to   { left: 110%; }
 }
 
-		/* COURS FOREST C PA VRÉ! */
+		/* THE CLOUD 2 */
 
 .nuage2{
 	position: absolute;
@@ -57,7 +57,7 @@ div~div{
 	to   { top:10%; left: 110%; }
 }
 
-		/* JE KIFF BOUGER MOI */
+		/* THE CLOUD 3 */
 
 .nuage3 {
 	position: absolute;
@@ -82,7 +82,7 @@ div~div{
 	100%  { top: 30px; left: 100%;  }
 }
 
-/* J'AI PAS LE TEMPS GROS */
+/* THE CLOUD 4 */
 
 .nuage4{
 	position: absolute;
@@ -98,7 +98,7 @@ div~div{
 	to   { top:6%; left: 110%; }
 }
 
-						/* SOLEIL */
+						/* THE SUN */
 
 .sun img{
 	width: 200px;
@@ -142,10 +142,10 @@ div~div{
 }
 
 
-						/* LA ROUTE */
+						/* THE ROAD */
 
 
-/* PERSONNAGES */
+			/* CHARACTERS */
 
 /* HELLO ONE */
 
@@ -297,7 +297,7 @@ div~div{
 	to   { right: 110%;  }
 }
 
-/* Styling du souterrain*/
+/* STYLING OF UNDERGROUND*/
 
 #souterrain
 {
